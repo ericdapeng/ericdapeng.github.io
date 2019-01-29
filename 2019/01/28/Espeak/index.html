@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="espeak audio resample,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Eric&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="espeak PC&amp;#x7248;&amp;#x672C;&amp;#x7F16;&amp;#x8BD1;&amp;#x914D;&amp;#x7F6E;    &amp;#x4ECB;&amp;#x7ECD;   eSpeak is a compact open source software speech synthesizer for English and other languages, for Linux and Windows.">
+<meta name="keywords" content="espeak audio resample">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Espeak嵌入式移植">
+<meta property="og:url" content="http://yoursite.com/2019/01/28/Espeak/index.html">
 <meta property="og:site_name" content="Eric&#39;s Blog">
+<meta property="og:description" content="espeak PC&amp;#x7248;&amp;#x672C;&amp;#x7F16;&amp;#x8BD1;&amp;#x914D;&amp;#x7F6E;    &amp;#x4ECB;&amp;#x7ECD;   eSpeak is a compact open source software speech synthesizer for English and other languages, for Linux and Windows.">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-01-29T01:31:41.822Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Eric&#39;s Blog">
+<meta name="twitter:title" content="Espeak嵌入式移植">
+<meta name="twitter:description" content="espeak PC&amp;#x7248;&amp;#x672C;&amp;#x7F16;&amp;#x8BD1;&amp;#x914D;&amp;#x7F6E;    &amp;#x4ECB;&amp;#x7ECD;   eSpeak is a compact open source software speech synthesizer for English and other languages, for Linux and Windows.">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/28/Espeak/">
 
 
 
 
 
-  <title>Eric's Blog</title>
+  <title>Espeak嵌入式移植 | Eric's Blog</title>
   
 
 
@@ -150,8 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -276,9 +280,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -308,9 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/28/Espeak/" itemprop="url">Espeak嵌入式移植</a></h1>
+          <h1 class="post-title" itemprop="name headline">Espeak嵌入式移植</h1>
         
 
         <div class="post-meta">
@@ -382,9 +384,7 @@
       
 
       
-        
-          
-            <div id="content">
+        <div id="content">
 
 <div id="outline-container-orgcea1594" class="outline-2">
 <h2 id="orgcea1594">espeak PC&#x7248;&#x672C;&#x7F16;&#x8BD1;&#x914D;&#x7F6E;</h2>
@@ -567,8 +567,6 @@ emacsclient Makefile</span><br></pre></td></tr></table></figure>
 </div>
 </div>
 
-          
-        
       
     </div>
     
@@ -583,14 +581,20 @@ emacsclient Makefile</span><br></pre></td></tr></table></figure>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/espeak-audio-resample/" rel="tag"># espeak audio resample</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -600,10 +604,11 @@ emacsclient Makefile</span><br></pre></td></tr></table></figure>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -611,6 +616,10 @@ emacsclient Makefile</span><br></pre></td></tr></table></figure>
 
 
           
+
+  
+
+
 
         </div>
         
@@ -631,8 +640,17 @@ emacsclient Makefile</span><br></pre></td></tr></table></figure>
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -694,6 +712,22 @@ emacsclient Makefile</span><br></pre></td></tr></table></figure>
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#orgcea1594"><span class="nav-text">espeak PC版本编译配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org4963fa8"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgd6b12fe"><span class="nav-text">参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgbbb8809"><span class="nav-text">依赖包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgc4aecdd"><span class="nav-text">编译PC版本espeak</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org5ab2f1f"><span class="nav-text">编译PC版本espeakedit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org2a4ff61"><span class="nav-text">移植espeak</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgc0f90cf"><span class="nav-text">espeak 音频重采样</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -834,6 +868,10 @@ emacsclient Makefile</span><br></pre></td></tr></table></figure>
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
